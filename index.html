@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интерактивный тренажёр (тест)</title>
+    <!-- Подключение стилей (fonts.css больше не нужен) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <h1>🧠 Интерактивный тренажёр</h1>
+        <h2>Основы программирования</h2>
+
+        <!-- Прогресс -->
+        <div class="progress-container">
+            <span id="progress-text">Вопрос 1 из 10</span>
+            <div class="progress-bar-bg">
+                <div id="progress-bar" class="progress-bar-fill" style="width: 0%;"></div>
+            </div>
+        </div>
+
+        <!-- Карточка с вопросом и вариантами -->
+        <div id="card" class="card">
+            <div id="question" class="question">Термин появится здесь</div>
+
+            <!-- Контейнер для вариантов ответов -->
+            <div id="options-container" class="options-container">
+                <!-- Варианты будут добавлены через JavaScript -->
+            </div>
+
+            <!-- Блок обратной связи -->
+            <div id="feedback" class="feedback"></div>
+
+            <!-- Кнопки управления -->
+            <div class="button-group">
+                <button id="next-btn" class="btn btn-next" disabled>Далее ➔</button>
+            </div>
+        </div>
+
+        <!-- Счетчики -->
+        <div class="stats">
+            <span id="correct-count">✅ 0</span>
+            <span id="incorrect-count">❌ 0</span>
+        </div>
+
+        <!-- Итоговый результат -->
+        <div id="result-area" class="result-area" style="display: none;">
+            <h2>🎉 Поздравляем!</h2>
+            <p id="final-message">Вы ответили на все вопросы!</p>
+            <button id="restart-btn" class="btn btn-restart">Начать заново</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
