@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Интерактивный тренажёр (тест)</title>
-    <!-- Подключение стилей (fonts.css больше не нужен) -->
+
+    <!-- ===== FAVICON (иконка на вкладке) ===== -->
+    <!-- Вариант с эмодзи 🧠 (самый простой, ничего скачивать не нужно) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
+
+    <!-- ===== Стили ===== -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,19 +25,11 @@
             </div>
         </div>
 
-        <!-- Карточка с вопросом и вариантами -->
+        <!-- Карточка -->
         <div id="card" class="card">
             <div id="question" class="question">Термин появится здесь</div>
-
-            <!-- Контейнер для вариантов ответов -->
-            <div id="options-container" class="options-container">
-                <!-- Варианты будут добавлены через JavaScript -->
-            </div>
-
-            <!-- Блок обратной связи -->
+            <div id="options-container" class="options-container"></div>
             <div id="feedback" class="feedback"></div>
-
-            <!-- Кнопки управления -->
             <div class="button-group">
                 <button id="next-btn" class="btn btn-next" disabled>Далее ➔</button>
             </div>
@@ -44,7 +41,7 @@
             <span id="incorrect-count">❌ 0</span>
         </div>
 
-        <!-- Итоговый результат -->
+        <!-- Результат -->
         <div id="result-area" class="result-area" style="display: none;">
             <h2>🎉 Поздравляем!</h2>
             <p id="final-message">Вы ответили на все вопросы!</p>
