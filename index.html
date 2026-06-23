@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Интерактивный тренажёр (тест)</title>
 
-    <!-- ===== FAVICON (иконка на вкладке) ===== -->
-    <!-- Вариант с эмодзи 🧠 (самый простой, ничего скачивать не нужно) -->
+    <!-- Иконка на вкладке в виде эмоджи -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
 
-    <!-- ===== Стили ===== -->
+    <!-- Стили -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -35,10 +34,12 @@
             </div>
         </div>
 
-        <!-- Счетчики -->
-        <div class="stats">
-            <span id="correct-count">✅ 0</span>
-            <span id="incorrect-count">❌ 0</span>
+        <!-- СТАТИСТИКА -->
+        <div id="stats-container" class="stats-container">
+            <span class="stats-label">Прогресс:</span>
+            <span id="stats-correct" class="stats-correct">0 правильных</span>
+            <span class="stats-divider">/</span>
+            <span id="stats-incorrect" class="stats-incorrect">0 неправильных</span>
         </div>
 
         <!-- Результат -->
